@@ -6,3 +6,4 @@ const scene = new THREE.PerspectiveCamera(
     1000// far
 );
 const renderer = new THREE.WebGLRenderer({canvas});
+renderer.set
