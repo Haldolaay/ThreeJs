@@ -30,7 +30,7 @@ scene.add(cube);
 renderer.render(scene,camera);
 // alert("hi");
     function r(time){
-    time *= 0.01; // convert time to seconds 
+    time *= 0.001; // convert time to seconds 
     cube.rotation.x = time;
     cube.rotation.y = time;
     cube.rotation.z = time;
