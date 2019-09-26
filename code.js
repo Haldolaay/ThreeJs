@@ -6,11 +6,11 @@ const renderer = new THREE.WebGLRenderer({canvas});
 const fov = 75; //field of view
 const aspect = 2;  // the canvas default
 const near = 0.1;
-const far = 5;
+const far = 9;
 const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 
 
-camera.position.z = 2;// without the z position you won't see your cube inside the canvas
+camera.position.z = 5;// without the z position you won't see your cube inside the canvas
 
 const scene = new THREE.Scene();
 
@@ -30,7 +30,7 @@ scene.add(cube);
 renderer.render(scene,camera);
 // alert("hi");
     function r(time){
-    time *= 0.001; // convert time to seconds 
+    time *= 0.01; // convert time to seconds 
     cube.rotation.x = time;
     cube.rotation.y = time;
     cube.rotation.z = time;
